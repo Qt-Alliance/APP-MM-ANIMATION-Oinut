@@ -1,0 +1,7 @@
+oinut (1.2.3) unstable; urgency=low
+
+  * Fixed: Layer rename button was disabled in the drawing module.
+  * Removed warning before deleting a layer in drawing module.
+  * Fixed: If document closed during playback, audio kept playing.
+
+ -- O. Bahri Gordebak <purplehuman@zoho.com>  Thu, 22 Nov 2015 23:16:45 +0200

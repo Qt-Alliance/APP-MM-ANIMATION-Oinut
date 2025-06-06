@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg7384"
+   height="16"
+   width="16"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="layerdown.svg">
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     id="namedview7"
+     showgrid="false"
+     inkscape:zoom="14.75"
+     inkscape:cx="-11.457627"
+     inkscape:cy="8"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg7384" />
+  <metadata
+     id="metadata90">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Gnome Symbolic Icon Theme</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <title
+     id="title9167">Gnome Symbolic Icon Theme</title>
+  <g
+     id="layer12"
+     transform="translate(-180,-626)">
+    <path
+       style="block-progression:tb;text-indent:0;color:#bebebe;enable-background:new;text-transform:none;fill:#000000"
+       d="M 2.1015625 4.8144531 L 2.1015625 4.9980469 L 1.9980469 4.9980469 L 2 5 L 2 6 C 1.99988 6.0104 1.99954 6.02075 2 6.03125 C 2.0058449 6.1642998 2.0435165 6.2959161 2.1015625 6.4179688 L 2.1015625 6.5078125 L 2.1640625 6.5078125 C 2.2093069 6.5819388 2.2507592 6.6591207 2.3125 6.71875 L 7.53125 12 L 12.71875 6.71875 C 12.779456 6.6580445 12.8129 6.5808526 12.853516 6.5078125 L 13.017578 6.5078125 L 13.017578 4.8144531 L 2.1015625 4.8144531 z M 4.9667969 6.5078125 L 10.070312 6.5078125 L 7.5292969 9.0917969 L 4.9667969 6.5078125 z "
+       transform="translate(180,626)"
+       id="path10839-9-9-8" />
+  </g>
+</svg>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VideoDialog</class>
+ <widget class="QMainWindow" name="VideoDialog">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>640</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>3000</width>
+    <height>3000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Oinut - Camera</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="viewLayout"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAddFrame"/>
+   <addaction name="actionInsertFrame"/>
+   <addaction name="actionReplaceFrame"/>
+   <addaction name="separator"/>
+   <addaction name="actionPreviousCamera"/>
+   <addaction name="actionNextCamera"/>
+   <addaction name="separator"/>
+   <addaction name="actionGrid"/>
+   <addaction name="actionOnion3"/>
+   <addaction name="actionQuit"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QToolBar" name="toolBar_3">
+   <property name="windowTitle">
+    <string>toolBar_3</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>RightToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_4">
+   <property name="windowTitle">
+    <string>toolBar_4</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>BottomToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionZoomIn"/>
+   <addaction name="actionZoomOut"/>
+   <addaction name="actionDragMode"/>
+  </widget>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/quit.svg</normaloff>:/images/quit.svg</iconset>
+   </property>
+   <property name="text">
+    <string>quit</string>
+   </property>
+   <property name="toolTip">
+    <string>Quit (Ctrl+Q)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionNextCamera">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/nextCamera.svg</normaloff>:/images/nextCamera.svg</iconset>
+   </property>
+   <property name="text">
+    <string>NextCamera</string>
+   </property>
+   <property name="toolTip">
+    <string>Next Camera (Ctrl+Right)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Right</string>
+   </property>
+  </action>
+  <action name="actionPreviousCamera">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/previousCamera.svg</normaloff>:/images/previousCamera.svg</iconset>
+   </property>
+   <property name="text">
+    <string>PreviousCamera</string>
+   </property>
+   <property name="toolTip">
+    <string>Previous Camera (Ctrl+Left)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Left</string>
+   </property>
+  </action>
+  <action name="actionOnion3">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/onion3.svg</normaloff>:/images/onion3.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Onion3</string>
+   </property>
+   <property name="toolTip">
+    <string>Onionskin (O)</string>
+   </property>
+   <property name="shortcut">
+    <string>O</string>
+   </property>
+  </action>
+  <action name="actionAddFrame">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/addImage.svg</normaloff>:/images/addImage.svg</iconset>
+   </property>
+   <property name="text">
+    <string>addFrame</string>
+   </property>
+   <property name="toolTip">
+    <string>Add Frame (Space)</string>
+   </property>
+   <property name="shortcut">
+    <string>Space</string>
+   </property>
+  </action>
+  <action name="actionInsertFrame">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/insertEmpty.svg</normaloff>:/images/insertEmpty.svg</iconset>
+   </property>
+   <property name="text">
+    <string>insertFrame</string>
+   </property>
+   <property name="toolTip">
+    <string>Insert Frame (Ctrl+I)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionReplaceFrame">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/replace.svg</normaloff>:/images/replace.svg</iconset>
+   </property>
+   <property name="text">
+    <string>replaceFrame</string>
+   </property>
+   <property name="toolTip">
+    <string>Replace Frame (Ctrl+R)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionGrid">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/grid.svg</normaloff>:/images/grid.svg</iconset>
+   </property>
+   <property name="text">
+    <string>grid</string>
+   </property>
+   <property name="toolTip">
+    <string>Show Grid (Ctrl+G)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="actionZoomIn">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/zoomIn.svg</normaloff>:/images/zoomIn.svg</iconset>
+   </property>
+   <property name="text">
+    <string>zoomIn</string>
+   </property>
+   <property name="toolTip">
+    <string>Zoom In (+)</string>
+   </property>
+   <property name="shortcut">
+    <string>+</string>
+   </property>
+  </action>
+  <action name="actionZoomOut">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/zoomOut.svg</normaloff>:/images/zoomOut.svg</iconset>
+   </property>
+   <property name="text">
+    <string>zoomOut</string>
+   </property>
+   <property name="toolTip">
+    <string>Zoom Out (-)</string>
+   </property>
+   <property name="shortcut">
+    <string>-</string>
+   </property>
+  </action>
+  <action name="actionDragMode">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/dragMode.svg</normaloff>:/images/dragMode.svg</iconset>
+   </property>
+   <property name="text">
+    <string>dragMode</string>
+   </property>
+   <property name="toolTip">
+    <string>Drag Mode (D)</string>
+   </property>
+   <property name="shortcut">
+    <string>D</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../../resource/oinut.qrc"/>
+ </resources>
+ <connections/>
+</ui>

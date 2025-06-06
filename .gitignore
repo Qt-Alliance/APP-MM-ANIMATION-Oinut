@@ -1,0 +1,10 @@
+Makefile
+oinut
+debian/oinut/*
+debian/oinut*
+debian/files
+moc/*
+rcc/*
+obj/*
+uic/*
+*~

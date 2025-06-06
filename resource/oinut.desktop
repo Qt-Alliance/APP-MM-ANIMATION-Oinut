@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Oinut
+GenericName=Oinut
+Type=Application
+Exec=oinut
+Categories=Application;Graphics
+Terminal=false
+Icon=oinut
+MimeType=application/x-oin
+Comment=2D animation software

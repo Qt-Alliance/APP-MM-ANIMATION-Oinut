@@ -1,0 +1,16 @@
+Oinut
+=====
+
+Free and open source animation software for Linux.
+
+What's with the name? Oinut is pronounced /ɔːjnɑːt/. It's pronounced the same   as the word "oynat" in Turkish which means "play, make move".
+
+Oinut is a raster based animation package, and can be used for traditional      animation (either paper drawn or digital), cutout animation, stopmotion         animation, rotoscoping, or combining them all.
+
+There's not much documentation at the moment, but we hope soon there will be.   But the program is very functional. Most actions don't have shortcuts yet. And  there's a bunch of features we want to add yet.
+
+If you have ffmpeg in your path, import video and render video buttons are      enabled. But without ffmpeg, you can always render an image sequence, so it     shouldn't be much of a problem.
+
+Although Oinut is written with Qt/C++, it's troublesome to port it to Windows,  because it uses Sane as the scanning library.
+
+ -- O. Bahri Gordebak <purplehuman@zoho.com>  Thu, 15 Oct 2015 23:16:45 +0200

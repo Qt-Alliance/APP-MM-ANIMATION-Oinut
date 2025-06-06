@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CutoutDialog</class>
+ <widget class="QMainWindow" name="CutoutDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>640</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>3000</width>
+    <height>3000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Oinut - Cutout</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="viewLayout"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpen"/>
+   <addaction name="actionLoadLast"/>
+   <addaction name="actionSave"/>
+   <addaction name="actionSaveAs"/>
+   <addaction name="actionImportOinut"/>
+   <addaction name="separator"/>
+   <addaction name="actionAddFrame"/>
+   <addaction name="actionInsertFrame"/>
+   <addaction name="actionReplaceFrame"/>
+   <addaction name="separator"/>
+   <addaction name="actionAddImage"/>
+   <addaction name="actionDeleteImage"/>
+   <addaction name="actionExportSelected"/>
+   <addaction name="separator"/>
+   <addaction name="actionGrid"/>
+   <addaction name="actionOnion3"/>
+   <addaction name="actionSetParent"/>
+   <addaction name="actionUnsetParent"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionMove"/>
+   <addaction name="actionRotate"/>
+   <addaction name="actionEditPivotPoint"/>
+   <addaction name="actionScale"/>
+   <addaction name="actionRotate15"/>
+   <addaction name="actionChangeImage"/>
+   <addaction name="actionLock"/>
+   <addaction name="actionRestoreRotate"/>
+   <addaction name="actionRestoreEdit"/>
+   <addaction name="actionRestoreScale"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_3">
+   <property name="windowTitle">
+    <string>toolBar_3</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>RightToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSendAboveParent"/>
+   <addaction name="actionSendUp"/>
+   <addaction name="actionSendDown"/>
+   <addaction name="actionSendBelowParent"/>
+   <addaction name="separator"/>
+   <addaction name="actionQuit"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_4">
+   <property name="windowTitle">
+    <string>toolBar_4</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>BottomToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionZoomIn"/>
+   <addaction name="actionZoomOut"/>
+   <addaction name="actionDragMode"/>
+  </widget>
+  <action name="actionAddImage">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/add.svg</normaloff>:/images/add.svg</iconset>
+   </property>
+   <property name="text">
+    <string>addImage</string>
+   </property>
+   <property name="toolTip">
+    <string>Add Image (A)</string>
+   </property>
+   <property name="shortcut">
+    <string>A</string>
+   </property>
+  </action>
+  <action name="actionChangeImage">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/changeimage.svg</normaloff>:/images/changeimage.svg</iconset>
+   </property>
+   <property name="text">
+    <string>changeImage</string>
+   </property>
+   <property name="toolTip">
+    <string>Change Image (C)</string>
+   </property>
+   <property name="shortcut">
+    <string>C</string>
+   </property>
+  </action>
+  <action name="actionDeleteImage">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/delete.svg</normaloff>:/images/delete.svg</iconset>
+   </property>
+   <property name="text">
+    <string>deleteImage</string>
+   </property>
+   <property name="toolTip">
+    <string>Delete Image (Del)</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="actionEditPivotPoint">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/edit.svg</normaloff>:/images/edit.svg</iconset>
+   </property>
+   <property name="text">
+    <string>editPivotPoint</string>
+   </property>
+   <property name="toolTip">
+    <string>Edit Pivot Point (E)</string>
+   </property>
+   <property name="shortcut">
+    <string>E</string>
+   </property>
+  </action>
+  <action name="actionLoadLast">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/loadlast.svg</normaloff>:/images/loadlast.svg</iconset>
+   </property>
+   <property name="text">
+    <string>loadLast</string>
+   </property>
+   <property name="toolTip">
+    <string>Open Last Document (Ctrl+Shift+O)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+O</string>
+   </property>
+  </action>
+  <action name="actionLock">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/lock.svg</normaloff>:/images/lock.svg</iconset>
+   </property>
+   <property name="text">
+    <string>lock</string>
+   </property>
+   <property name="toolTip">
+    <string>Lock Image (Ctrl+L)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionMove">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/move.svg</normaloff>:/images/move.svg</iconset>
+   </property>
+   <property name="text">
+    <string>move</string>
+   </property>
+   <property name="toolTip">
+    <string>Move (M)</string>
+   </property>
+   <property name="shortcut">
+    <string>M</string>
+   </property>
+  </action>
+  <action name="actionOnion3">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/onion3.svg</normaloff>:/images/onion3.svg</iconset>
+   </property>
+   <property name="text">
+    <string>onion3</string>
+   </property>
+   <property name="toolTip">
+    <string>Onionskin (3 Frames) (3)</string>
+   </property>
+   <property name="shortcut">
+    <string>3</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/open.svg</normaloff>:/images/open.svg</iconset>
+   </property>
+   <property name="text">
+    <string>open</string>
+   </property>
+   <property name="toolTip">
+    <string>Open (Ctrl+O)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/quit.svg</normaloff>:/images/quit.svg</iconset>
+   </property>
+   <property name="text">
+    <string>quit</string>
+   </property>
+   <property name="toolTip">
+    <string>Quit (Ctrl+Q)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionRestoreEdit">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/restoreedit.svg</normaloff>:/images/restoreedit.svg</iconset>
+   </property>
+   <property name="text">
+    <string>restoreEdit</string>
+   </property>
+   <property name="toolTip">
+    <string>Restore Pivot Point Edit (Ctrl+Shift+E)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+E</string>
+   </property>
+  </action>
+  <action name="actionRestoreRotate">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/restorerotate.svg</normaloff>:/images/restorerotate.svg</iconset>
+   </property>
+   <property name="text">
+    <string>restoreRotate</string>
+   </property>
+   <property name="toolTip">
+    <string>Restore Rotation (Ctrl+Shift+R)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+R</string>
+   </property>
+  </action>
+  <action name="actionRotate">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/rotate.svg</normaloff>:/images/rotate.svg</iconset>
+   </property>
+   <property name="text">
+    <string>rotate</string>
+   </property>
+   <property name="toolTip">
+    <string>Rotate (R)</string>
+   </property>
+   <property name="shortcut">
+    <string>R</string>
+   </property>
+  </action>
+  <action name="actionRotate15">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/rotate15.svg</normaloff>:/images/rotate15.svg</iconset>
+   </property>
+   <property name="text">
+    <string>rotate15</string>
+   </property>
+   <property name="toolTip">
+    <string>Rotate 15 Degrees (Shift+R)</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+R</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/save.svg</normaloff>:/images/save.svg</iconset>
+   </property>
+   <property name="text">
+    <string>save</string>
+   </property>
+   <property name="toolTip">
+    <string>Save (Ctrl+S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSaveAs">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/saveas.svg</normaloff>:/images/saveas.svg</iconset>
+   </property>
+   <property name="text">
+    <string>saveAs</string>
+   </property>
+   <property name="toolTip">
+    <string>Save As (Ctrl+Shift+S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionScale">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/scale.svg</normaloff>:/images/scale.svg</iconset>
+   </property>
+   <property name="text">
+    <string>scale</string>
+   </property>
+   <property name="toolTip">
+    <string>Scale (S)</string>
+   </property>
+   <property name="shortcut">
+    <string>S</string>
+   </property>
+  </action>
+  <action name="actionSendAboveParent">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/sendaboveparent.svg</normaloff>:/images/sendaboveparent.svg</iconset>
+   </property>
+   <property name="text">
+    <string>sendAboveParent</string>
+   </property>
+   <property name="toolTip">
+    <string>Send Above Parent (Ctrl+Shift+Up)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Up</string>
+   </property>
+  </action>
+  <action name="actionSendBelowParent">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/sendbelowparent.svg</normaloff>:/images/sendbelowparent.svg</iconset>
+   </property>
+   <property name="text">
+    <string>sendBelowParent</string>
+   </property>
+   <property name="toolTip">
+    <string>Send Below Parent (Ctrl+Shift+Down)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Down</string>
+   </property>
+  </action>
+  <action name="actionSendDown">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/senddown.svg</normaloff>:/images/senddown.svg</iconset>
+   </property>
+   <property name="text">
+    <string>sendDown</string>
+   </property>
+   <property name="toolTip">
+    <string>Send Down (Ctrl+Down)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Down</string>
+   </property>
+  </action>
+  <action name="actionSendUp">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/sendup.svg</normaloff>:/images/sendup.svg</iconset>
+   </property>
+   <property name="text">
+    <string>sendUp</string>
+   </property>
+   <property name="toolTip">
+    <string>Send Up (Ctrl+Up)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Up</string>
+   </property>
+  </action>
+  <action name="actionSetParent">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/setparent.svg</normaloff>:/images/setparent.svg</iconset>
+   </property>
+   <property name="text">
+    <string>setParent</string>
+   </property>
+   <property name="toolTip">
+    <string>Set Parent (Ctrl+P)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionUnsetParent">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/unsetparent.svg</normaloff>:/images/unsetparent.svg</iconset>
+   </property>
+   <property name="text">
+    <string>unsetParent</string>
+   </property>
+   <property name="toolTip">
+    <string>Unset Parent (Ctrl+U)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="actionRestoreScale">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/restorescale.svg</normaloff>:/images/restorescale.svg</iconset>
+   </property>
+   <property name="text">
+    <string>restoreScale</string>
+   </property>
+   <property name="toolTip">
+    <string>Restore Scaling (Ctrl+Shift+C)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+C</string>
+   </property>
+  </action>
+  <action name="actionZoomIn">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/zoomIn.svg</normaloff>:/images/zoomIn.svg</iconset>
+   </property>
+   <property name="text">
+    <string>ZoomIn</string>
+   </property>
+   <property name="toolTip">
+    <string>Zoom In (+)</string>
+   </property>
+   <property name="shortcut">
+    <string>+</string>
+   </property>
+  </action>
+  <action name="actionZoomOut">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/zoomOut.svg</normaloff>:/images/zoomOut.svg</iconset>
+   </property>
+   <property name="text">
+    <string>ZoomOut</string>
+   </property>
+   <property name="toolTip">
+    <string>Zoom Out (-)</string>
+   </property>
+   <property name="shortcut">
+    <string>-</string>
+   </property>
+  </action>
+  <action name="actionDragMode">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/dragMode.svg</normaloff>:/images/dragMode.svg</iconset>
+   </property>
+   <property name="text">
+    <string>DragMode</string>
+   </property>
+   <property name="toolTip">
+    <string>Drag Mode (D)</string>
+   </property>
+   <property name="shortcut">
+    <string>D</string>
+   </property>
+  </action>
+  <action name="actionImportOinut">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/import.svg</normaloff>:/images/import.svg</iconset>
+   </property>
+   <property name="text">
+    <string>ImportOinut</string>
+   </property>
+   <property name="toolTip">
+    <string>Import Oinut Cutout File (I)</string>
+   </property>
+   <property name="shortcut">
+    <string>I</string>
+   </property>
+  </action>
+  <action name="actionAddFrame">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/addImage.svg</normaloff>:/images/addImage.svg</iconset>
+   </property>
+   <property name="text">
+    <string>addFrame</string>
+   </property>
+   <property name="toolTip">
+    <string>Add Frame (Space)</string>
+   </property>
+   <property name="shortcut">
+    <string>Space</string>
+   </property>
+  </action>
+  <action name="actionInsertFrame">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/insertEmpty.svg</normaloff>:/images/insertEmpty.svg</iconset>
+   </property>
+   <property name="text">
+    <string>insertFrame</string>
+   </property>
+   <property name="toolTip">
+    <string>Insert Frame (Ctrl+I)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionReplaceFrame">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/replace.svg</normaloff>:/images/replace.svg</iconset>
+   </property>
+   <property name="text">
+    <string>replaceFrame</string>
+   </property>
+   <property name="toolTip">
+    <string>Replace Frame (Ctrl+R)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionGrid">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/grid.svg</normaloff>:/images/grid.svg</iconset>
+   </property>
+   <property name="text">
+    <string>grid</string>
+   </property>
+   <property name="toolTip">
+    <string>Show Grid (Ctrl+G)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="actionExportSelected">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/exportSelection.svg</normaloff>:/images/exportSelection.svg</iconset>
+   </property>
+   <property name="text">
+    <string>exportSelected</string>
+   </property>
+   <property name="toolTip">
+    <string>Export Image of Selected (Ctrl+Shift+E)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+E</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../../resource/oinut.qrc"/>
+ </resources>
+ <connections/>
+</ui>

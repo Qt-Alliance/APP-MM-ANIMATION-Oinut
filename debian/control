@@ -1,0 +1,15 @@
+Source: oinut
+Section: main
+Priority: optional
+Maintainer: O. Bahri Gordebak <purplehuman@zoho.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: http://purplehuman.github.iot/oinut/
+#Vcs-Git: git://anonscm.debian.org/collab-maint/purpleowl.git
+#Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/purpleowl.git;a=summary
+
+Package: oinut
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libsane (>= 1.0.24), libquazip-qt5-1 (>= 0.7), libqt5core5a (>= 5.3.0), libqt5gui5 (>= 5.3.0), libqt5multimedia5 (>= 5.3.0), libqt5multimedia5-plugins (>=5.3.0), libqt5svg5 (>= 5.3.0), libqt5widgets5 (>= 5.3.0)
+Description: Animation software
+ Animation software for Linux.

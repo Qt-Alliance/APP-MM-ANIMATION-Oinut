@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg7384"
+   height="16"
+   width="16"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="layerup.svg">
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     id="namedview7"
+     showgrid="false"
+     inkscape:zoom="14.75"
+     inkscape:cx="-11.457627"
+     inkscape:cy="8"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg7384" />
+  <metadata
+     id="metadata90">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Gnome Symbolic Icon Theme</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <title
+     id="title9167">Gnome Symbolic Icon Theme</title>
+  <g
+     id="layer12"
+     transform="matrix(1,0,0,-1,-180,642.81356)">
+    <path
+       style="color:#bebebe;text-indent:0;text-transform:none;block-progression:tb;fill:#000000;enable-background:new"
+       d="M 7.53125 4.8144531 L 2.3125 10.095703 C 2.2514104 10.154703 2.2109705 10.231464 2.1660156 10.304688 L 2.1015625 10.304688 L 2.1015625 10.396484 C 2.0435165 10.518537 2.0058449 10.650153 2 10.783203 C 1.99954 10.793703 1.99988 10.804053 2 10.814453 L 2 11.814453 L 2.1015625 11.814453 L 2.1015625 12 L 13.017578 12 L 13.017578 10.304688 L 12.853516 10.304688 C 12.81295 10.231846 12.779311 10.156264 12.71875 10.095703 L 7.53125 4.8144531 z M 7.5292969 7.7207031 L 10.070312 10.304688 L 4.9667969 10.304688 L 7.5292969 7.7207031 z "
+       transform="matrix(1,0,0,-1,180,642.81356)"
+       id="path10839-9-9-8" />
+  </g>
+</svg>

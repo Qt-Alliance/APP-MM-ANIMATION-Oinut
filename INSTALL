@@ -1,0 +1,20 @@
+Oinut
+=====
+
+To compile Oinut from source, you'll need Qt5 (core, gui, widgets, multimedia and svg), opencv-core, opencv-highgui, zlib, sane and quazip-qt5 development packages. To run the software, you'll need binary packages of these libraries Qt5 multimedia plugins.
+
+Download the source to some location on your computer and unzip or untar it. Enter the extracted directory and run the commands below:
+
+     qmake
+     make
+     make install (as root)
+
+You can run the software with the following command:
+
+     oinut
+
+There's a mimetype file in resource folder named x-oin.xml. If you'd like to associate .oin files with Oinut use these commands:
+
+     xdg-mime install x-oin.xml
+     xdg-mime default oinut.desktop application/x-oin
+

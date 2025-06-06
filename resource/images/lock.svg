@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg7384"
+   height="16"
+   width="16"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="lock.svg">
+  <defs
+     id="defs11" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     id="namedview9"
+     showgrid="false"
+     inkscape:zoom="14.75"
+     inkscape:cx="18.576271"
+     inkscape:cy="3.1186441"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg7384" />
+  <metadata
+     id="metadata90">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Gnome Symbolic Icon Theme</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <title
+     id="title9167">Gnome Symbolic Icon Theme</title>
+  <rect
+     style="fill:#000000;fill-opacity:1;stroke:none"
+     id="rect3007"
+     width="11.728813"
+     height="10.169492"
+     x="2.2372882"
+     y="5.2203388"
+     ry="1.8970345" />
+  <path
+     sodipodi:type="arc"
+     style="fill:none;stroke:#000000;stroke-opacity:1;stroke-width:1.86354817;stroke-miterlimit:4;stroke-dasharray:none"
+     id="path3777"
+     sodipodi:cx="-12.644068"
+     sodipodi:cy="6.1016951"
+     sodipodi:rx="5.7288136"
+     sodipodi:ry="5.8983049"
+     d="M -6.9152541,6.1016951 A 5.7288136,5.8983049 0 1 1 -6.915386,6.0616783"
+     sodipodi:start="0"
+     sodipodi:end="6.2764008"
+     sodipodi:open="true"
+     transform="matrix(0.67623527,0,0,0.71410237,16.62778,1.0818091)" />
+</svg>

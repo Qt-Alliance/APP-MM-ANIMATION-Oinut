@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg7384"
+   height="16"
+   width="16"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="hidden.svg">
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="738"
+     inkscape:window-height="480"
+     id="namedview8"
+     showgrid="false"
+     inkscape:zoom="14.75"
+     inkscape:cx="8"
+     inkscape:cy="8"
+     inkscape:window-x="628"
+     inkscape:window-y="203"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg7384" />
+  <metadata
+     id="metadata90">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Gnome Symbolic Icon Theme</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <title
+     id="title9167">Gnome Symbolic Icon Theme</title>
+  <g
+     id="layer10"
+     transform="translate(-161 -447)">
+    <path
+       style="fill:#000000"
+       d="M 3 1 C 1.338 1 0 2.338 0 4 L 0 11 C 0 12.662 1.338 14 3 14 L 13 14 C 14.662 14 16 12.662 16 11 L 16 4 C 16 2.338 14.662 1 13 1 L 3 1 z M 3 3 L 13 3 C 13.554 3 14 3.446 14 4 L 14 11 C 14 11.554 13.554 12 13 12 L 3 12 C 2.446 12 2 11.554 2 11 L 2 4 C 2 3.446 2.446 3 3 3 z M 8.0332031 3.1855469 C 5.7246801 3.1855469 3.8476562 5.1462459 3.8476562 7.5351562 C 3.8476562 9.9244394 5.7246801 11.865234 8.0332031 11.865234 C 10.341726 11.865234 12.220703 9.9244394 12.220703 7.5351562 C 12.220703 5.1462459 10.341726 3.1855469 8.0332031 3.1855469 z M 8.0332031 4.4277344 C 8.6750443 4.4277344 9.2676811 4.6572892 9.7539062 5.0097656 L 5.6035156 9.3222656 C 5.2541272 8.8189054 5.0429688 8.2087268 5.0429688 7.5351562 C 5.0429688 5.8165229 6.3723823 4.4277344 8.0332031 4.4277344 z M 10.576172 5.9042969 C 10.862046 6.3797548 11.042969 6.9312483 11.042969 7.5351562 C 11.042969 9.2539139 9.6940239 10.623047 8.0332031 10.623047 C 7.4607971 10.623047 6.9361722 10.43838 6.4824219 10.15625 L 10.576172 5.9042969 z M 4 15 C 4 15 5 16 8 16 C 11 16 12 15 12 15 L 11 15 L 5 15 L 4 15 z "
+       transform="translate(161,447)"
+       id="rect3773-3" />
+  </g>
+  <g
+     transform="matrix(0.59806295,0,0,0.62143237,-128.32446,-374.04375)"
+     id="layer12" />
+</svg>

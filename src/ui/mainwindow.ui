@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>885</width>
+    <height>592</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>640</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>3000</width>
+    <height>3000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Oinut</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="timelineVerticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="timelineHorizontalLayout">
+        <item>
+         <layout class="QVBoxLayout" name="timelineLayout"/>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="previewLayout"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <layout class="QVBoxLayout" name="viewVerticalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="viewLayout"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="actionOpen"/>
+   <addaction name="actionLoadLast"/>
+   <addaction name="actionSave"/>
+   <addaction name="actionSaveAs"/>
+   <addaction name="actionResize"/>
+   <addaction name="separator"/>
+   <addaction name="actionVideo"/>
+   <addaction name="actionCutout"/>
+   <addaction name="actionDrawing"/>
+   <addaction name="actionScan"/>
+   <addaction name="separator"/>
+   <addaction name="actionImportVideo"/>
+   <addaction name="actionAddSound"/>
+   <addaction name="actionRemoveSound"/>
+   <addaction name="actionExportFrame"/>
+   <addaction name="actionExportFrameInCurrentLayer"/>
+   <addaction name="actionExportLayer"/>
+   <addaction name="actionRender"/>
+   <addaction name="actionRenderVideo"/>
+   <addaction name="separator"/>
+   <addaction name="actionQuit"/>
+  </widget>
+  <widget class="QToolBar" name="layerToolBar">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <property name="floatable">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>true</bool>
+   </attribute>
+   <addaction name="actionOpacity"/>
+   <addaction name="actionHide"/>
+   <addaction name="actionAddLayer"/>
+   <addaction name="actionRemoveLayer"/>
+   <addaction name="actionMoveLayerUp"/>
+   <addaction name="actionTopLayer"/>
+   <addaction name="actionUp"/>
+   <addaction name="actionDown"/>
+   <addaction name="actionBottomLayer"/>
+   <addaction name="actionMoveLayerDown"/>
+   <addaction name="actionAddLayerBelow"/>
+   <addaction name="actionMultiply"/>
+   <addaction name="actionGreenScreen"/>
+   <addaction name="actionMergeDown"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>BottomToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionZoomIn"/>
+   <addaction name="actionZoomOut"/>
+   <addaction name="actionDragMode"/>
+  </widget>
+  <widget class="QToolBar" name="statusToolBar">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>true</bool>
+   </attribute>
+  </widget>
+  <widget class="QToolBar" name="frameToolBar">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionPlay"/>
+   <addaction name="actionToggleLoop"/>
+   <addaction name="separator"/>
+   <addaction name="actionFirst"/>
+   <addaction name="actionPrevious_Frame"/>
+   <addaction name="actionNext_Frame"/>
+   <addaction name="actionLast"/>
+   <addaction name="separator"/>
+   <addaction name="actionAddImages"/>
+   <addaction name="actionAddEmpty"/>
+   <addaction name="actionDelete"/>
+   <addaction name="actionInsert"/>
+   <addaction name="actionInsertEmpty"/>
+   <addaction name="actionDuplicate"/>
+   <addaction name="actionDuplicateAndAppend"/>
+   <addaction name="actionReplace"/>
+  </widget>
+  <widget class="QToolBar" name="frameStatusToolBar">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QToolBar" name="layerStatusToolBar">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionPlay">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/play.svg</normaloff>:/images/play.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Play</string>
+   </property>
+   <property name="toolTip">
+    <string>Play (Space)</string>
+   </property>
+   <property name="shortcut">
+    <string>Space</string>
+   </property>
+  </action>
+  <action name="actionNext_Frame">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/next.svg</normaloff>:/images/next.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Next</string>
+   </property>
+   <property name="toolTip">
+    <string>Next (Right)</string>
+   </property>
+   <property name="shortcut">
+    <string>Right</string>
+   </property>
+  </action>
+  <action name="actionPrevious_Frame">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/previous.svg</normaloff>:/images/previous.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Previous</string>
+   </property>
+   <property name="toolTip">
+    <string>Previous (Left)</string>
+   </property>
+   <property name="shortcut">
+    <string>Left</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/new.svg</normaloff>:/images/new.svg</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+   <property name="toolTip">
+    <string>New (Ctrl+N)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionRender">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/render.svg</normaloff>:/images/render.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Render</string>
+   </property>
+   <property name="toolTip">
+    <string>Render (Ctrl+R)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionToggleLoop">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/loop.svg</normaloff>:/images/loop.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Toggle Loop</string>
+   </property>
+   <property name="toolTip">
+    <string>Toggle Loop (L)</string>
+   </property>
+   <property name="shortcut">
+    <string>L</string>
+   </property>
+  </action>
+  <action name="actionUp">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/up.svg</normaloff>:/images/up.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Up</string>
+   </property>
+   <property name="toolTip">
+    <string>Up (Up)</string>
+   </property>
+   <property name="shortcut">
+    <string>Up</string>
+   </property>
+  </action>
+  <action name="actionDown">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/down.svg</normaloff>:/images/down.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Down</string>
+   </property>
+   <property name="toolTip">
+    <string>Down (Down)</string>
+   </property>
+   <property name="shortcut">
+    <string>Down</string>
+   </property>
+  </action>
+  <action name="actionAddLayer">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/addLayer.svg</normaloff>:/images/addLayer.svg</iconset>
+   </property>
+   <property name="text">
+    <string>AddLayer</string>
+   </property>
+   <property name="toolTip">
+    <string>Add Layer (Ctrl+L)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionRemoveLayer">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/removelayer.svg</normaloff>:/images/removelayer.svg</iconset>
+   </property>
+   <property name="text">
+    <string>RemoveLayer</string>
+   </property>
+   <property name="toolTip">
+    <string>Remove Layer (Ctrl+Del)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Del</string>
+   </property>
+  </action>
+  <action name="actionAddEmpty">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/addEmpty.svg</normaloff>:/images/addEmpty.svg</iconset>
+   </property>
+   <property name="text">
+    <string>AddEmpty</string>
+   </property>
+   <property name="toolTip">
+    <string>Add Empty Frame (Ctrl++)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl++</string>
+   </property>
+  </action>
+  <action name="actionMultiply">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/multiply.svg</normaloff>:/images/multiply.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Multiply</string>
+   </property>
+   <property name="toolTip">
+    <string>Multiply (M)</string>
+   </property>
+   <property name="shortcut">
+    <string>M</string>
+   </property>
+  </action>
+  <action name="actionFirst">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/first.svg</normaloff>:/images/first.svg</iconset>
+   </property>
+   <property name="text">
+    <string>First</string>
+   </property>
+   <property name="toolTip">
+    <string>First (Ctrl+Left)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Left</string>
+   </property>
+  </action>
+  <action name="actionLast">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/last.svg</normaloff>:/images/last.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Last</string>
+   </property>
+   <property name="toolTip">
+    <string>Last (Ctrl+Right)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Right</string>
+   </property>
+  </action>
+  <action name="actionTopLayer">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/topLayer.svg</normaloff>:/images/topLayer.svg</iconset>
+   </property>
+   <property name="text">
+    <string>TopLayer</string>
+   </property>
+   <property name="toolTip">
+    <string>Top (Ctrl+Up)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Up</string>
+   </property>
+  </action>
+  <action name="actionBottomLayer">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/bottomLayer.svg</normaloff>:/images/bottomLayer.svg</iconset>
+   </property>
+   <property name="text">
+    <string>BottomLayer</string>
+   </property>
+   <property name="toolTip">
+    <string>Bottom (Ctrl+Down)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Down</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/delete.svg</normaloff>:/images/delete.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+   <property name="toolTip">
+    <string>Remove Frame (Del)</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="actionAddImages">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/add.svg</normaloff>:/images/add.svg</iconset>
+   </property>
+   <property name="text">
+    <string>AddImages</string>
+   </property>
+   <property name="toolTip">
+    <string>Add Images (A)</string>
+   </property>
+   <property name="shortcut">
+    <string>A</string>
+   </property>
+  </action>
+  <action name="actionHide">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/shown.svg</normaloff>:/images/shown.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Hide</string>
+   </property>
+   <property name="toolTip">
+    <string>Hide (H)</string>
+   </property>
+   <property name="shortcut">
+    <string>H</string>
+   </property>
+  </action>
+  <action name="actionVideo">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/camera.svg</normaloff>:/images/camera.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Video</string>
+   </property>
+   <property name="toolTip">
+    <string>Show Video Window (V)</string>
+   </property>
+   <property name="shortcut">
+    <string>V</string>
+   </property>
+  </action>
+  <action name="actionAddLayerBelow">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/addLayer.svg</normaloff>:/images/addLayer.svg</iconset>
+   </property>
+   <property name="text">
+    <string>AddLayerBelow</string>
+   </property>
+   <property name="toolTip">
+    <string>Add Layer Below (Ctrl+Shift+L)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+L</string>
+   </property>
+  </action>
+  <action name="actionInsert">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/insert.svg</normaloff>:/images/insert.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Insert</string>
+   </property>
+   <property name="toolTip">
+    <string>Insert Images (I)</string>
+   </property>
+   <property name="shortcut">
+    <string>I</string>
+   </property>
+  </action>
+  <action name="actionInsertEmpty">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/insertEmpty.svg</normaloff>:/images/insertEmpty.svg</iconset>
+   </property>
+   <property name="text">
+    <string>InsertEmpty</string>
+   </property>
+   <property name="toolTip">
+    <string>Insert Empty Frame (Ctrl+I)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionDuplicate">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/duplicate.svg</normaloff>:/images/duplicate.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Duplicate</string>
+   </property>
+   <property name="toolTip">
+    <string>Duplicate Frame (U)</string>
+   </property>
+   <property name="shortcut">
+    <string>U</string>
+   </property>
+  </action>
+  <action name="actionReplace">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/replace.svg</normaloff>:/images/replace.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Replace</string>
+   </property>
+   <property name="toolTip">
+    <string>Replace Frame (R)</string>
+   </property>
+   <property name="shortcut">
+    <string>R</string>
+   </property>
+  </action>
+  <action name="actionExportFrame">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/exportframe.svg</normaloff>:/images/exportframe.svg</iconset>
+   </property>
+   <property name="text">
+    <string>exportFrame</string>
+   </property>
+   <property name="toolTip">
+    <string>Export Frame (E)</string>
+   </property>
+   <property name="shortcut">
+    <string>E</string>
+   </property>
+  </action>
+  <action name="actionAddSound">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/addSound.svg</normaloff>:/images/addSound.svg</iconset>
+   </property>
+   <property name="text">
+    <string>addSound</string>
+   </property>
+   <property name="toolTip">
+    <string>Add Sound (S)</string>
+   </property>
+   <property name="shortcut">
+    <string>S</string>
+   </property>
+  </action>
+  <action name="actionRemoveSound">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/removeSound.svg</normaloff>:/images/removeSound.svg</iconset>
+   </property>
+   <property name="text">
+    <string>removeSound</string>
+   </property>
+   <property name="toolTip">
+    <string>Remove Last Sound (Ctrl+S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionCutout">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/cutoutdialog.svg</normaloff>:/images/cutoutdialog.svg</iconset>
+   </property>
+   <property name="text">
+    <string>cutout</string>
+   </property>
+   <property name="toolTip">
+    <string>Show Cutout Window (C)</string>
+   </property>
+   <property name="shortcut">
+    <string>C</string>
+   </property>
+  </action>
+  <action name="actionDrawing">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/drawing.svg</normaloff>:/images/drawing.svg</iconset>
+   </property>
+   <property name="text">
+    <string>drawing</string>
+   </property>
+   <property name="toolTip">
+    <string>Show Drawing Window (D)</string>
+   </property>
+   <property name="shortcut">
+    <string>D</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/quit.svg</normaloff>:/images/quit.svg</iconset>
+   </property>
+   <property name="text">
+    <string>quit</string>
+   </property>
+   <property name="toolTip">
+    <string>Quit (Ctrl+Q)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionExportLayer">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/exportlayer.svg</normaloff>:/images/exportlayer.svg</iconset>
+   </property>
+   <property name="text">
+    <string>exportLayer</string>
+   </property>
+   <property name="toolTip">
+    <string>Export Layer (Ctrl+E)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionMergeDown">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/mergeDownNormal.svg</normaloff>:/images/mergeDownNormal.svg</iconset>
+   </property>
+   <property name="text">
+    <string>mergeDown</string>
+   </property>
+   <property name="toolTip">
+    <string>Merge Layer Down (M)</string>
+   </property>
+   <property name="shortcut">
+    <string>M</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/open.svg</normaloff>:/images/open.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="toolTip">
+    <string>Open (Ctrl+O)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/save.svg</normaloff>:/images/save.svg</iconset>
+   </property>
+   <property name="text">
+    <string>save</string>
+   </property>
+   <property name="toolTip">
+    <string>Save (Ctrl+S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSaveAs">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/saveas.svg</normaloff>:/images/saveas.svg</iconset>
+   </property>
+   <property name="text">
+    <string>saveAs</string>
+   </property>
+   <property name="toolTip">
+    <string>Save As (Ctrl+Shift+S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionLoadLast">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/loadlast.svg</normaloff>:/images/loadlast.svg</iconset>
+   </property>
+   <property name="text">
+    <string>loadLast</string>
+   </property>
+   <property name="toolTip">
+    <string>Open Last Document (Ctrl+Shift+O)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+O</string>
+   </property>
+  </action>
+  <action name="actionOpacity">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/opacity.svg</normaloff>:/images/opacity.svg</iconset>
+   </property>
+   <property name="text">
+    <string>opacity</string>
+   </property>
+   <property name="toolTip">
+    <string>Layer Opacity (O)</string>
+   </property>
+   <property name="shortcut">
+    <string>O</string>
+   </property>
+  </action>
+  <action name="actionGreenScreen">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/greenscreen.svg</normaloff>:/images/greenscreen.svg</iconset>
+   </property>
+   <property name="text">
+    <string>greenScreen</string>
+   </property>
+   <property name="toolTip">
+    <string>Green Screen (Ctrl+G)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="actionImportVideo">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/importVideo.svg</normaloff>:/images/importVideo.svg</iconset>
+   </property>
+   <property name="text">
+    <string>importVideo</string>
+   </property>
+   <property name="toolTip">
+    <string>importVideo (Ctrl+Shift+I)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+I</string>
+   </property>
+  </action>
+  <action name="actionRenderVideo">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/renderVideo.svg</normaloff>:/images/renderVideo.svg</iconset>
+   </property>
+   <property name="text">
+    <string>renderVideo</string>
+   </property>
+   <property name="toolTip">
+    <string>Render Video (Ctrl+Shift+R)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+R</string>
+   </property>
+  </action>
+  <action name="actionScan">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/scanner.svg</normaloff>:/images/scanner.svg</iconset>
+   </property>
+   <property name="text">
+    <string>scan</string>
+   </property>
+   <property name="toolTip">
+    <string>Show Scan Window (Ctrl+C)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionDragMode">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/dragMode.svg</normaloff>:/images/dragMode.svg</iconset>
+   </property>
+   <property name="text">
+    <string>dragMode</string>
+   </property>
+   <property name="toolTip">
+    <string>Drag Mode (D)</string>
+   </property>
+   <property name="shortcut">
+    <string>D</string>
+   </property>
+  </action>
+  <action name="actionZoomIn">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/zoomIn.svg</normaloff>:/images/zoomIn.svg</iconset>
+   </property>
+   <property name="text">
+    <string>zoomIn</string>
+   </property>
+   <property name="toolTip">
+    <string>Zoom In (+)</string>
+   </property>
+   <property name="shortcut">
+    <string>+</string>
+   </property>
+  </action>
+  <action name="actionZoomOut">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/zoomOut.svg</normaloff>:/images/zoomOut.svg</iconset>
+   </property>
+   <property name="text">
+    <string>zoomOut</string>
+   </property>
+   <property name="toolTip">
+    <string>Zoom Out (-)</string>
+   </property>
+   <property name="shortcut">
+    <string>-</string>
+   </property>
+  </action>
+  <action name="actionDuplicateAndAppend">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/duplicateAndAppend.svg</normaloff>:/images/duplicateAndAppend.svg</iconset>
+   </property>
+   <property name="text">
+    <string>duplicateAndAppend</string>
+   </property>
+   <property name="toolTip">
+    <string>Duplicate And Append (Ctrl+Shift+D)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+D</string>
+   </property>
+  </action>
+  <action name="actionMoveLayerUp">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/layerup.svg</normaloff>:/images/layerup.svg</iconset>
+   </property>
+   <property name="text">
+    <string>moveLayerUp</string>
+   </property>
+   <property name="toolTip">
+    <string>Move Layer Up (Ctrl+Shift+Up)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Up</string>
+   </property>
+  </action>
+  <action name="actionMoveLayerDown">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/layerdown.svg</normaloff>:/images/layerdown.svg</iconset>
+   </property>
+   <property name="text">
+    <string>moveLayerDown</string>
+   </property>
+   <property name="toolTip">
+    <string>Move Layer Down (Ctrl+Shift+Down)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Down</string>
+   </property>
+  </action>
+  <action name="actionExportFrameInCurrentLayer">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/exportimagelayer.svg</normaloff>:/images/exportimagelayer.svg</iconset>
+   </property>
+   <property name="text">
+    <string>exportFrameInCurrentLayer</string>
+   </property>
+   <property name="toolTip">
+    <string>Export Frame In Current Layer (Ctrl+Shift+E)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+E</string>
+   </property>
+  </action>
+  <action name="actionResize">
+   <property name="icon">
+    <iconset resource="../../resource/oinut.qrc">
+     <normaloff>:/images/scaleDown.svg</normaloff>:/images/scaleDown.svg</iconset>
+   </property>
+   <property name="text">
+    <string>resize</string>
+   </property>
+   <property name="toolTip">
+    <string>Resize Animation (Ctrl+Shift+A)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+A</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../../resource/oinut.qrc"/>
+ </resources>
+ <connections/>
+</ui>

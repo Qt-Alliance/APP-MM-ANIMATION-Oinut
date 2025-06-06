@@ -1,8 +1,9 @@
-![Oinut Logo](https://github.com/purplehuman/oinut/blob/master/resource/oinut-logo.png?raw=true)
+Oinut
+=====
 
 Free and open source (GPLv3) animation software for Linux.
 
-Homepage: [Oinut](http://oinut.org/)
+Homepage: http://oinut.org/
 
 What's with the name? Oinut is pronounced /ɔːjnɑːt/. It's pronounced the same as the word "oynat" in Turkish which means "play, make move". According to Google Translate it also means "placed great value" in Finnish as it is. 
 
@@ -14,19 +15,19 @@ There's not much documentation at the moment, but we hope soon there will be. Bu
 
 If you have ffmpeg in your path, import video and render video buttons are enabled. But without ffmpeg, you can always render an image sequence, so it shouldn't be much of a problem.
 
-To compile it from source, you'll need Qt5, opencv-core, opencv-highgui, zlib, sane and quazip-qt5 development packages. To run the software, you'll need binary packages of these libraries and Qt5 multimedia plugins.
+To compile it from source, you'll need Qt5, opencv-core, opencv-highgui, zlib, sane and quazip-qt5 development packages. To run the software, you'll need binary packages of these libraries and Qt5 Multimedia plugins.
 
 Required Qt5 modules are: Qt5Svg, Qt5Widgets, Qt5Multimedia, Qt5Gui, and Qt5Core.
 
-Documentation will go in the [wiki](https://github.com/purplehuman/oinut/wiki). Please see [Contributing page](https://github.com/purplehuman/oinut/wiki/Contributing) on the wiki or CONTRIBUTING file in the source for ways you can contribute. If you have an accepted code contribution, please don't forget to add yourself to the AUTHORS file.
+Documentation will go in the wiki(https://github.com/purplehuman/oinut/wiki). Please see Contributing page(https://github.com/purplehuman/oinut/wiki/Contributing) on the wiki or CONTRIBUTING file in the source for ways you can contribute. If you have an accepted code contribution, please don't forget to add yourself to the AUTHORS file.
 
-[Here](https://github.com/purplehuman/oinut/wiki/Features) is a list of features.
+Here(https://github.com/purplehuman/oinut/wiki/Features) is a list of features.
 
-See [Screenshots page](https://github.com/purplehuman/oinut/wiki/Screenshots) for screenshots.
+See Screenshots page(https://github.com/purplehuman/oinut/wiki/Screenshots) for screenshots.
 
-Before making a feature request, please read the [TODO](https://github.com/purplehuman/oinut/wiki/TODO) to make sure it's not planned already.
+Before making a feature request, please read the TODO(https://github.com/purplehuman/oinut/wiki/TODO) to make sure it's not planned already.
 
-Issue tracker can be found [here](https://github.com/purplehuman/oinut/issues)
+Issue tracker can be found herei(https://github.com/purplehuman/oinut/issues)
 
 Enjoy!
 

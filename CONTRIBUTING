@@ -1,0 +1,59 @@
+Contributing To The Project
+===========================
+
+Hello, if you want to contribute to the project, well, first of all, thank you. Thank you for even reading this document. There are several ways you can contribute. I will list below the things you can do to contribute to the project.
+
+Do something with it, and share with us.
+========================================
+
+Really, this project is for animation. If you've done some animations with our software to show to the world, you've shared it on YouTube, Vimeo, etc. , or you haven't shared it but you want us to know, just let us know. We're looking forward to it.
+
+Share the word.
+===============
+
+If you like our software, please consider telling people about it. There may be some people out there who needs it and doesn't know about it yet. We can use every help we can get.
+
+Write tutorials.
+================
+
+If you were working with our software for some time, and know your way around it, you can consider writing a tutorial or two for beginners. You can post it on your blog and give us a link.
+
+Translate it.
+=============
+
+If your mother language is something other than English, you might want to translate the user interface or documentation. We'd appreciate it.
+
+Report bugs.
+============
+
+If you've found a bug in our software, please consider telling us about it, because we possibly don't know it, because if we did, we would try to fix it. Just make sure your bug hasn't been reported before. Please use Issues page on the project homepage at github.
+
+Make sure you've included information about which version you're running, on what operating system, and what to do to reproduce the bug.
+
+Make feature requests.
+======================
+
+If you want to make a feature request, just make sure it's a really necessary feature, because we want our software to stay simple as much as possible. Just because you think some feature would be cool, not everybody thinks so. Ask yourself "Do I REALLY need it?" If your answer is "yes", you might consider posting it on Issues. If we reject your feature request, please don't take it personally. Because it's not.
+
+Submit patches.
+===============
+
+If you are a developer, and found out you can do something for the project. Consider writing and submitting some patches. You can fix bugs or add new features. But same thing above goes for adding features. Ask yourself "Is this feature REALLY needed?" If your answer is "yes", just make a patch and send it to us. If we reject your submission, please don't take it personally. Because it's not.
+
+Before submitting patches, look at the code carefully. We're not the best developers in the world, and our code isn't the best. We're sorry about that. But still, consider making your code is read like ours. Make our lives easier by sending readable code.
+
+   * Use four spaces for indentations.
+   * Use spaces before and after everything. x=1 is Bad, x = 1 is Good.
+   * Make your variables mean something. v_c_i is Bad, capturedVideoImage is Good.
+   * Make your function names mean something. nf() is Bad, showNextFrame() is Good.
+   * Don't use underscores.
+   * Use github for pull requests.
+   * Make sure to test your bugfix or feature extensively before sending it. We don't want your fix to generate more bugs, right?
+
+
+Make packages.
+==============
+
+We still lack packages and binaries. If you've made packages for any OS, please send us the links. Make sure your package is for the latest released version, and make sure you handled dependencies alright. Just test the installation on target platform before sending it, because we can't test every package. We don't have the hardware for that.
+
+Thank you for even considering to contribute!

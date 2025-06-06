@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg7384"
+   height="16"
+   width="16"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="rotate.svg"
+   inkscape:export-filename="/home/bahri/Dev/oinut/resource/images/rotateCursor.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     id="namedview8"
+     showgrid="false"
+     inkscape:zoom="14.75"
+     inkscape:cx="15.38983"
+     inkscape:cy="5.4237288"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g4953" />
+  <metadata
+     id="metadata90">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Gnome Symbolic Icon Theme</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <title
+     id="title9167">Gnome Symbolic Icon Theme</title>
+  <g
+     id="g4953"
+     transform="translate(-601 -461)">
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       d="M 8.3730469 1.03125 C 4.9082731 1.03125 2.0562088 3.6871561 1.625 7.1328125 L 0.20117188 7.09375 L 2.1992188 12.140625 L 4.3378906 7.2050781 L 2.7851562 7.1640625 C 3.199169 4.3859714 5.5491329 2.2617188 8.4042969 2.2617188 C 11.537457 2.2617188 14.07249 4.8263894 14.09375 8.0058594 L 14.09375 8.0371094 C 14.09375 11.231969 11.552557 13.810547 8.4042969 13.810547 C 8.3215969 13.810547 8.2360369 13.814547 8.1542969 13.810547 L 8.1542969 15.041016 C 8.2283969 15.043016 8.2983669 15.041016 8.3730469 15.041016 C 12.136067 15.041016 15.183594 11.912529 15.183594 8.0371094 L 15.183594 7.9726562 C 15.158194 4.1159162 12.118017 1.03125 8.3730469 1.03125 z "
+       transform="translate(601,461)"
+       id="path4045" />
+  </g>
+</svg>
